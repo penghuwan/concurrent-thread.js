@@ -112,3 +112,7 @@ i will be wait
 // 3秒后输出
 i was notified
 ```
+
+## dataMap/dataList
+线程通信状态对象，分别为对象和数组
+
