@@ -22,7 +22,8 @@
 
 
 # Usage
-## submit 线程休眠
+## submit 
+线程休眠
 ```js
 submit(async function example() {
     await this.sleep(3000);
@@ -32,7 +33,8 @@ submit(async function example() {
 ```
 // 3秒后输出 1
 ```
-## interupt 线程中断
+## interupt 
+线程中断
 ```js
 submit(async function example() {
     console.log(this.isInterrupted());
@@ -44,7 +46,8 @@ submit(async function example() {
 // 输出 false 
 // 输出 true
 ```
-## getState 获取线程状态
+## getState 
+获取线程状态
 ```js
 submit(async function example() {
     console.log(this.getState());
@@ -53,7 +56,10 @@ submit(async function example() {
 ```
 // 输出 RUNNABLE
 ```
-## 非公平锁Lock
+## Lock
+非公平锁
++ **Lock.lock**: 加锁
++ **Lock.unlock**: 解锁
 ```js
 async function commonCode() {
     await Lock.lock();
@@ -81,7 +87,10 @@ example1 end
 // 再3秒后输出
 example2 end
 ```
-## 条件对象
+## Condition
+条件对象
++ **Condition.wait**:不具备执行条件，线程进入waiting状态，等待被唤醒
++ **Condition.notify**: 唤醒线程
 ```js
 async function testCode() {
     console.log('i will be wait');
