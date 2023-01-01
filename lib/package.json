@@ -6,10 +6,10 @@
   "dependencies": {
     "event-emitter": "^0.3.5",
     "koa": "^2.7.0",
-    "webpack": "^4.39.2"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "koa-webpack-dev-middleware": "^2.0.2",
     "webpack-dev-middleware": "^3.7.0"
   },
